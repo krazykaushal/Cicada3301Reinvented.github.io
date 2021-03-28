@@ -1046,5 +1046,61 @@
 
       gtag("config", "UA-23581568-13");
     </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        if (! function_exists('fa_custom_setup_cdn_webfont') ) {
+        function fa_custom_setup_cdn_webfont($cdn_url = '', $integrity = null) {
+          $matches = [];
+          $match_result = preg_match('|/([^/]+?)\.css$|', $cdn_url, $matches);
+          $resource_handle_uniqueness = ($match_result === 1) ? $matches[1] : md5($cdn_url);
+          $resource_handle = "font-awesome-cdn-webfont-$resource_handle_uniqueness";
+
+          foreach ( [ 'wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts' ] as $action ) {
+            add_action(
+              $action,
+              function () use ( $cdn_url, $resource_handle ) {
+                wp_enqueue_style( $resource_handle, $cdn_url, [], null );
+              }
+            );
+          }
+
+          if($integrity) {
+            add_filter(
+              'style_loader_tag',
+              function( $html, $handle ) use ( $resource_handle, $integrity ) {
+                if ( in_array( $handle, [ $resource_handle ], true ) ) {
+                  return preg_replace(
+                    '/\/>$/',
+                    'integrity="' . $integrity .
+                    '" crossorigin="anonymous" />',
+                    $html,
+                    1
+                  );
+                } else {
+                  return $html;
+                }
+              },
+              10,
+              2
+            );
+          }
+        }
+      }
+    </script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
   </body>
 </html>
