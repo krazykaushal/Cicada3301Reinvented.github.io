@@ -136,11 +136,11 @@ h1, h2, h3, h4, h5,
   border-top: 1px solid #edf0f5 !important; }
 
 .site-footer {
-  padding: 4em 0;
+  padding: 4em 0 1em 0;
   background: #1b1d24; }
   @media (min-width: 768px) {
     .site-footer {
-      padding: 8em 0; } }
+      padding: 8em 0 2em 0; } }
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
@@ -778,3 +778,30 @@ h1, h2, h3, h4, h5,
   width: 40px;
   height: 40px;
   line-height: 40px; }
+
+ .sm-icon {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5 em;
+}
+
+.form-box {
+  margin: 2em 8em;
+  padding: 4em 8em;
+  border-style: solid;
+  border-radius: 2em;
+}
+
+.form-row {
+  width: 100%;
+  height: 2em;
+  margin: 0.5em;
+}
+
+.form-label {
+  width: 20%;
+}
+
+.form-field {
+  width: 78%;
+}
