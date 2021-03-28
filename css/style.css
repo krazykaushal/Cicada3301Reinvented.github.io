@@ -15,6 +15,78 @@ body {
   background: #000;
   color: #fff; }
 
+.prize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.special-track {
+  display: flex;
+}
+
+.prize-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  width: 700px;
+  height: 135px;
+  /* margin: 20px; */
+  margin-bottom: 0;
+  border-radius: 2%;
+  border: 3px #232531 solid;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.special-track-card {
+  display: flex;
+  font-size: 16px;
+  /* margin: 20px; */
+  margin-bottom: 0;
+  border-radius: 2%;
+  padding:20px;
+  border: 3px #232531 solid;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Hover.css */
+/* Outline Out */
+.hvr-outline-out {
+  /* display: inline-block; */
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  /*box-shadow: 0 0 1px green;*/
+  position: relative;
+}
+.hvr-outline-out:before {
+  content: '';
+  position: absolute;
+  border: white solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  border: #ff5733 solid 4px;
+}
+
+
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
