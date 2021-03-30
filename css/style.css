@@ -859,3 +859,73 @@ h1, h2, h3, h4, h5,
   width: 40px;
   height: 40px;
   line-height: 40px; }
+
+.sm-icon {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5 em;
+}
+
+.form-box {
+  margin: 10% 20%;
+  padding: 2% 4%;
+  border-style: solid;
+  border-radius: 2em;
+}
+
+.form-label {
+  width: 20%;
+}
+
+.form-field {
+  width: 60%;
+}
+
+.accordion {
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  padding: 1em 4em;
+  margin-top: 0.2em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+/* .active, .accordion:hover { */
+ .accordion:hover {
+  background-color: #ccc;
+  color: #000;
+  font-weight: bold;
+}
+
+.panel {
+  padding: 0.5em 4em 0 4em;
+  display: none;
+  overflow: hidden;
+  background-color: #ccc;
+  width: 100%;
+  color: #000;
+}
+
+.panel a {
+  font-weight: bold;
+}
+
+@media(max-width: 768px) {
+  .footer-block {
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .form-box {
+    font-size: small;
+  }
+
+  .form-label {
+    width: "100%";
+  }
+}
