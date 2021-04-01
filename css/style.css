@@ -42,7 +42,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 40px;
+/*   font-size: 40px; */
+  font-size: 2rem;
   font-weight: 600;
   width: 700px;
   height: 135px;
