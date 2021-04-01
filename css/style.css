@@ -25,6 +25,17 @@ body {
 .special-track {
   display: flex;
 }
+.special-track-card{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  /* margin: 20px; */
+  margin-bottom: 0;
+  border-radius: 10px;
+  padding:20px;
+  border: 3px #cfcfd1 solid;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
 
 .prize-card {
   display: flex;
@@ -37,20 +48,101 @@ body {
   height: 135px;
   /* margin: 20px; */
   margin-bottom: 0;
-  border-radius: 2%;
-  border: 3px #232531 solid;
+  border-radius: 10px;
+  border: 3px #cfcfd1 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-.special-track-card {
+.prize-card:hover{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  
+  font-size: 2em; color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*for gold*/
+.winner-card-g {
   display: flex;
+  flex-direction: column;
   font-size: 16px;
   /* margin: 20px; */
   margin-bottom: 0;
-  border-radius: 2%;
+  border-radius: 10px;
   padding:20px;
-  border: 3px #232531 solid;
+  border: 3px #FEE101 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+.winner-card-g:hover{
+  background-color: #FEE101;
+  color: #232531;
+}
+.gold-medal{
+  color:#fee101;
+}
+.winner-card-g:hover .gold-medal{
+  color: black;
+}
+
+/*for silver*/
+.winner-card-s {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  /* margin: 20px; */
+  margin-bottom: 0;
+  border-radius: 10px;
+  padding:20px;
+  border: 3px #e4e7e7 solid;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+.winner-card-s:hover{
+  background-color: #e4e7e7;
+  color: #232531;
+}
+.silver-medal{
+  color:#d7d7d7;
+}
+.winner-card-s:hover .silver-medal{
+  color: black;
+}
+/*for bronze*/
+.winner-card-b {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  /* margin: 20px; */
+  margin-bottom: 0;
+  border-radius: 10px;
+  padding:20px;
+  border: 3px #A77044 solid;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+.winner-card-b:hover{
+  background-color:#A77044;
+  color: #232531;
+}
+.bronze-medal{
+  color:#a77044;
+}
+.winner-card-b:hover .bronze-medal{
+  color: black;
 }
 
 .text-gradient{
