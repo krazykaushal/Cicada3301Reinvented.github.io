@@ -1,4 +1,8 @@
 /* Base */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.7;
   color: #cfcfd1;
@@ -32,7 +36,7 @@ body {
   /* margin: 20px; */
   margin-bottom: 0;
   border-radius: 10px;
-  padding:20px;
+  padding:1rem;
   border: 3px #cfcfd1 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 }
@@ -43,16 +47,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-/*   font-size: 40px; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  width: 700px;
-  height: 135px;
+/*   width: 700px;
+  height: 135px; */
   /* margin: 20px; */
   margin-bottom: 0;
   border-radius: 10px;
   border: 3px #cfcfd1 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 2rem 1rem;
   
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -61,10 +65,10 @@ body {
 
 .prize-card:hover{
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   
-  font-size: 2em; color: white;
+  color: white;
 }
 
 @keyframes gradient {
@@ -90,6 +94,7 @@ body {
   padding:20px;
   border: 3px #FEE101 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 .winner-card-g:hover{
   background-color: #FEE101;
@@ -113,6 +118,7 @@ body {
   padding:20px;
   border: 3px #e4e7e7 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 .winner-card-s:hover{
   background-color: #e4e7e7;
@@ -135,6 +141,7 @@ body {
   padding:20px;
   border: 3px #A77044 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 .winner-card-b:hover{
   background-color:#A77044;
