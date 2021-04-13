@@ -91,10 +91,11 @@ body {
   /* margin: 20px; */
   margin-bottom: 0;
   border-radius: 10px;
-  padding:20px;
+  padding:20px 24px;
   border: 3px #FEE101 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   width: 100%;
+  text-align: center;
 }
 .winner-card-g:hover{
   background-color: #FEE101;
@@ -115,10 +116,11 @@ body {
   /* margin: 20px; */
   margin-bottom: 0;
   border-radius: 10px;
-  padding:20px;
+  padding:20px 24px;
   border: 3px #e4e7e7 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   width: 100%;
+  text-align: center;
 }
 .winner-card-s:hover{
   background-color: #e4e7e7;
@@ -138,10 +140,11 @@ body {
   /* margin: 20px; */
   margin-bottom: 0;
   border-radius: 10px;
-  padding:20px;
+  padding:20px 24px;
   border: 3px #A77044 solid;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   width: 100%;
+  text-align: center;
 }
 .winner-card-b:hover{
   background-color:#A77044;
@@ -168,7 +171,7 @@ body {
 /* Outline Out */
 .hvr-outline-out {
   /* display: inline-block; */
-  text-align: center;
+  
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
