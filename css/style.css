@@ -168,6 +168,7 @@ body {
 /* Outline Out */
 .hvr-outline-out {
   /* display: inline-block; */
+  text-align: center;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
